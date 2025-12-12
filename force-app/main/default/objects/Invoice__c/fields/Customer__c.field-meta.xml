@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer__c</fullName>
+    <description>Identifies the customer (Account) associated with this record. This relationship links the child record to the customer’s account, enabling consolidated tracking of all related activities, transactions, or properties under a single customer profile.</description>
+    <inlineHelpText>Select the customer account this record belongs to. This links the record to the correct client and allows for better visibility and reporting across all customer-related data.</inlineHelpText>
+    <label>Customer</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Related Invoices</relationshipLabel>
+    <relationshipName>Invoices</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

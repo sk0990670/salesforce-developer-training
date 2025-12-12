@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Date_Time__c</fullName>
+    <description>Records the exact date and time when the invoice was generated or issued. This timestamp is critical for tracking billing cycles, payment deadlines, and maintaining accurate financial records.</description>
+    <inlineHelpText>Enter the date and time the invoice was created or sent to the client. This helps determine due dates and manage payment timelines.</inlineHelpText>
+    <label>Invoice Date/Time</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

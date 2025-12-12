@@ -1,0 +1,16 @@
+<template>
+  <lightning-card variant="Narrow" title="Hello" icon-name="standard:account">
+    <!-- this is where the parent's content will be projected -->
+    <div class="slds-p-horizontal_small">
+
+      <slot name="header" onslotchange={handleSlotChange}></slot>
+      <slot name="body"></slot>
+      <slot name="footer"></slot>
+      <slot name="action"></slot>
+      <slot></slot>
+    </div>
+
+    <!-- lightning-card supports a 'footer' slot; this content becomes the card footer -->
+    <div slot="footer">Card Footer</div>
+  </lightning-card>
+</template>

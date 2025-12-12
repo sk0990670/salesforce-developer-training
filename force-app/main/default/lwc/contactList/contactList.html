@@ -1,0 +1,32 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Contact List" icon-name="standard:contact">
+
+        <lightning-button slot="actions" variant="success" label="Success" title="Success"></lightning-button>
+
+        <div class="slds-p-horizontal_small">
+
+            <!-- cabab case -->
+            <!-- ContactCard -->
+
+            <template if:true={contacts} for:each={contacts} for:item="con" for:index="index">
+            <C-contact-card key={con.Id} contact-information={con}></C-contact-card>
+
+            </template>
+
+            <C-display-account-l-w-c>
+                <h1>
+                    I am inside display account component.
+                </h1>
+
+                <h2>
+                    this is random slot
+                </h2>
+
+                <lightning-input slot="footer" type="date" variant="standard" name="date" label="date" placeholder="type here..."></lightning-input>
+            </C-display-account-l-w-c>
+
+
+        </div>
+    </lightning-card>
+    
+</template>

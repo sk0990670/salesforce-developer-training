@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Your Case Has Been Resolved – We&apos;d Love Your Feedback!</name>
+    <style>none</style>
+    <subject>Case {!Case.CaseNumber} Has Been Successfully Resolved</subject>
+    <textOnly>We&apos;d Love Your Feedback
+
+🎉 Your Case Has Been Resolved!
+We&apos;d love to hear about your experience
+
+📋 Case Summary
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Resolved Date: {!Case.ClosedDate}
+Assigned Agent: {!Case.Owner}
+
+Dear {!Case.Contact},
+
+Great news! Your support case has been successfully resolved. Our team has worked diligently to address your concerns, and we hope the solution meets your expectations.
+
+Your satisfaction is our top priority, and we would greatly appreciate your feedback on the support experience you received.
+
+⭐ How would you rate our support?
+Please click on one of the options below to share your experience:
+
+😊 Excellent    👍 Good
+😐 Average    👎 Poor
+
+💬 Want to share more detailed feedback?
+Your detailed feedback helps us improve our services and better serve you in the future.
+📝 Provide Detailed Feedback
+
+Thank you for choosing {!Organization.Name}. If you have any additional questions or concerns, please don&apos;t hesitate to reach out to us.
+
+Best regards,
+{!Case.Owner}
+{!Organization.Name} Support Team
+
+{!Organization.Name}
+📧 {!Organization.Email} | 📞 {!Organization.Phone}
+🌐 {!Organization.Website}
+This email was sent regarding Case #{!Case.CaseNumber}. If you have any questions, please reference this case number.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent__c</fullName>
+    <description>Defines the agent who holds this specialization. This master-detail relationship links each specialization entry to a specific agent, ensuring that all related specializations are managed under the agent’s ownership and follow their sharing and lifecycle rules.</description>
+    <inlineHelpText>Select the agent who this specialization belongs to. Each record must be associated with one agent to define their areas of expertise.</inlineHelpText>
+    <label>Agent</label>
+    <referenceTo>Agent__c</referenceTo>
+    <relationshipLabel>Agent Specializations</relationshipLabel>
+    <relationshipName>Agent_Specializations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

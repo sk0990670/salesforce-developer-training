@@ -1,0 +1,80 @@
+<html>
+  <body style="font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; padding: 20px; margin: 0;">
+    <div style="max-width:800px; margin: 0 auto; background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center;">
+        <h1 style="margin: 0; font-size: 24px;">🏠 Property Listing Approval Request</h1>
+        <p style="margin: 10px 0 0 0;">Requires your immediate attention</p>
+      </div>
+
+      <div style="padding: 30px;">
+        <p>Dear Property Manager,</p>
+        <p>A new property listing requires your approval. Please review the details below and take appropriate action.</p>
+
+        <!-- Property Details -->
+        <div style="background: #f8f9fa; border-left: 4px solid #667eea; padding: 20px; margin: 20px 0;">
+          <h3 style="color: #667eea; margin-top: 0;">📋 Property Details</h3>
+
+          <p><strong>Property Name:</strong> {!Property_Listing__c.Name}</p>
+          <p><strong>Property Address:</strong> {!Property_Listing__c.Property__r.Property_Address__c}</p>
+          <p><strong>Square Footage:</strong> {!Property_Listing__c.Square_Footage__c} sq ft</p>
+          <p><strong>Listing Agent:</strong> {!Property_Listing__c.Owner.Name}</p>
+          <p><strong>Current Status:</strong> {!Property_Listing__c.Listing_Status__c}</p>
+          <p><strong>Approval Status:</strong> {!Property_Listing__c.Approval_Status__c}</p>
+        </div>
+
+        <!-- Pricing Section -->
+        <div style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3 style="margin-top: 0;">💰 Pricing Analysis</h3>
+
+          <p><strong>Proposed Listing Price:</strong> {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Listing_Price__c}</p>
+          <p><strong>Market Analysis Price:</strong> {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Market_Analysis_Price__c}</p>
+          <p><strong>Price per Sq Ft:</strong> {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Price_Per_SqFt__c}</p>
+          <p><strong>Discount from Market:</strong> {!Property_Listing__c.Discount_From_Market__c}%</p>
+        </div>
+
+        <!-- Market Analysis -->
+        <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3 style="color: #856404; margin-top: 0;">📊 Market Analysis & Strategy</h3>
+          <p><strong>Strategy:</strong> {!Property_Listing__c.Listing_Strategy__c}</p>
+          <p><strong>Competitive Analysis:</strong></p>
+          <div style="background: #f8f9fa; padding: 15px; border-radius: 5px;">
+            {!Property_Listing__c.Competitive_Analysis__c}
+          </div>
+        </div>
+
+        <!-- Agent Recommendations -->
+        <div style="background: #e7f3ff; border-left: 4px solid #2196f3; padding: 20px; margin: 20px 0;">
+          <h3 style="color: #1976d2; margin-top: 0;">🎯 Agent Recommendations</h3>
+          <p>Based on current market conditions and competitive analysis, the listing agent recommends <strong style="background: #fff3cd; padding: 2px 6px; border-radius: 3px;">immediate approval</strong> of this listing at the proposed price point.</p>
+        </div>
+
+        <!-- Action Required -->
+        <div style="background: #fff8e1; border: 1px solid #ffcc02; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3 style="color: #f57c00; margin-top: 0;">⚠️ Action Required</h3>
+          <p>Please review this property listing and provide your approval decision. Time-sensitive market conditions may affect pricing if approval is delayed.</p>
+        </div>
+
+        <!-- Property Highlights -->
+        <div style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; color: white;">
+          <h3 style="margin-top: 0;">📸 Property Highlights</h3>
+          <p>Property photos and detailed specifications are available in the Salesforce record. Click the "View Full Details" button below.</p>
+        </div>
+
+        <!-- Buttons -->
+        <div style="text-align: center; padding: 20px; background: #f8f9fa; border-top: 1px solid #dee2e6;">
+          <a href="{!Property_Listing__c.Link}" style="display: inline-block; padding: 12px 24px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; margin: 10px;">📋 View Full Details in Salesforce</a>
+          <a href="mailto:{!Property_Listing__c.Owner.Email}" style="display: inline-block; padding: 12px 24px; background: #6c757d; color: white; text-decoration: none; border-radius: 5px; margin: 10px;">📧 Contact Listing Agent</a>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; color: #6c757d; font-size: 14px; padding: 20px;">
+          <p><strong>Generated on:</strong> {!TODAY()}<br />
+             <strong>Record ID:</strong> {!Property_Listing__c.Id}<br />
+             This is an automated notification from your Property Management System.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

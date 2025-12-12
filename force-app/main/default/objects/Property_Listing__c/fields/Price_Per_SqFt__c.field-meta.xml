@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Per_SqFt__c</fullName>
+    <formula>IF(
+    AND(
+        NOT(ISBLANK(Property__c)),
+        NOT(ISBLANK(Square_Footage__c)),
+        Square_Footage__c &gt; 0
+    ),
+    Listing_Price__c / Square_Footage__c,
+    NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Price Per SqFt</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

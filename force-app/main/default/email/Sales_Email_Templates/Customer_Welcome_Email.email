@@ -1,0 +1,78 @@
+<html>
+  <body style="font-family: Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px;">
+    <div style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      
+      <!-- Header -->
+      <div style="background: #667eea; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px 20px; text-align: center;">
+        <h1 style="margin: 0; font-size: 24px;">🎉 Welcome to {!Organization.Name}!</h1>
+        <p style="margin-top: 10px;">Your journey to success starts here</p>
+      </div>
+
+      <!-- Content -->
+      <div style="padding: 30px 20px;">
+        <p style="font-size: 16px;">Hello {!Contact.FirstName},</p>
+
+        <div style="background: #fce4ec; padding: 20px; text-align: center; border-radius: 8px; margin: 20px 0;">
+          <h2 style="margin: 0; font-size: 18px;">🚀 Welcome Aboard!</h2>
+          <p style="margin: 10px 0 0 0;">We're thrilled to have you join the {!Account.Name} family!</p>
+        </div>
+
+        <p style="font-size: 14px;">Thank you for choosing {!Organization.Name}! We're excited to have you and look forward to a long-lasting partnership.</p>
+
+        <!-- Account Info -->
+        <table width="100%" cellpadding="10" cellspacing="0" style="background:#f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; margin: 20px 0;">
+          <tr style="background: #00c6ff; color: white;">
+            <td colspan="2"><strong>📋 Your Account Information</strong></td>
+          </tr>
+          <tr>
+            <td width="40%"><strong>Account Name:</strong></td>
+            <td>{!Account.Name}</td>
+          </tr>
+          <tr>
+            <td><strong>Account Number:</strong></td>
+            <td>{!Account.AccountNumber}</td>
+          </tr>
+          <tr>
+            <td><strong>Account Manager:</strong></td>
+            <td>{!Account.OwnerFullName}</td>
+          </tr>
+          <tr>
+            <td><strong>Email:</strong></td>
+            <td><a href="mailto:{!Account.OwnerEmail}">{!Account.OwnerEmail}</a></td>
+          </tr>
+          <tr>
+            <td><strong>Phone:</strong></td>
+            <td>{!Account.Phone}</td>
+          </tr>
+          <tr>
+            <td><strong>Start Date:</strong></td>
+            <td>{!TODAY()}</td>
+          </tr>
+        </table>
+
+        <!-- CTA -->
+        <div style="text-align: center; margin: 30px 0;">
+          <a href="https://{!Organization.Name}.com/customer-portal" style="display:inline-block; background:#667eea; color:white; padding: 14px 28px; text-decoration: none; border-radius: 6px;">Access Your Portal</a>
+        </div>
+
+        <p style="font-size: 14px;">For questions or support:</p>
+        <p style="font-size: 14px;">
+          📧 <strong>Email:</strong> <a href="mailto:support@{!Organization.Name}.com">support@{!Organization.Name}.com</a><br>
+          📞 <strong>Phone:</strong> 1-800-SUPPORT<br>
+          📚 <strong>Help Center:</strong> <a href="https://{!Organization.Name}.com/help">Visit Knowledge Base</a>
+        </p>
+
+        <p style="margin-top: 20px; font-size: 14px;">Best regards,<br><strong>The {!Organization.Name} Team</strong></p>
+      </div>
+
+      <!-- Footer -->
+      <div style="background:#1e293b; color:#94a3b8; text-align:center; padding: 20px; font-size: 12px;">
+        &copy; 2025 {!Organization.Name}. All rights reserved.<br>
+        {!Organization.BillingStreet}, {!Organization.BillingCity}, {!Organization.BillingState} {!Organization.BillingPostalCode}<br><br>
+        <a href="https://{!Organization.Name}.com/privacy" style="color:#60a5fa;">Privacy</a> | 
+        <a href="https://{!Organization.Name}.com/terms" style="color:#60a5fa;">Terms</a> | 
+        <a href="https://{!Organization.Name}.com/unsubscribe" style="color:#60a5fa;">Unsubscribe</a>
+      </div>
+    </div>
+  </body>
+</html>

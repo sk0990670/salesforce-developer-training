@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Personal Profile" icon-name="standard:contact">
+        <div class="profile-card">
+            <div class="avatar">
+                <img src={profile.imageUrl} alt="Profile photo" />
+            </div>
+
+            <div class="info">
+                <h2 class="name">{profile.fullName}</h2>
+                <p class="job-title">{profile.jobTitle}</p>
+
+                <p class="bio">{profile.bio}</p>
+
+                <div class="contact">
+                    <p class="contact-item">
+                        <lightning-icon icon-name="utility:email" size="x-small" class="icon"></lightning-icon>
+                        <a href={mailtoLink}>{profile.email}</a>
+                    </p>
+                    <p class="contact-item">
+                        <lightning-icon icon-name="utility:call" size="x-small" class="icon"></lightning-icon>
+                        <a href={telLink}>{profile.phone}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

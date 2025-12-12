@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Customer Welcome Email</name>
+    <style>none</style>
+    <subject>Welcome to Solo School - {!Agent__c.Name}</subject>
+    <textOnly>🎉 Welcome to {!Organization.Name}!
+
+Your journey to success starts here
+
+Hello {!Contact.FirstName},
+
+🚀 Welcome Aboard!
+
+We&apos;re thrilled to have you join the {!Account.Name} family!
+
+Thank you for choosing {!Organization.Name}! We&apos;re excited to have you and look forward to a long-lasting partnership.
+
+📋 Your Account Information
+Account Name:  {!Account.Name}
+Account Number:  {!Account.AccountNumber}
+Account Manager:  {!Account.OwnerFullName}
+Email:  {!Account.OwnerEmail}
+Phone:  {!Account.Phone}
+Start Date:  {!TODAY()}
+
+Access Your Portal
+
+For questions or support:
+
+📧 Email: support@{!Organization.Name}.com
+📞 Phone: 1-800-SUPPORT
+📚 Help Center: Visit Knowledge Base
+
+Best regards,
+The {!Organization.Name} Team
+
+© 2025 {!Organization.Name}. All rights reserved.
+{!Organization.BillingStreet}, {!Organization.BillingCity}, {!Organization.BillingState} {!Organization.BillingPostalCode}
+
+Privacy | Terms | Unsubscribe</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

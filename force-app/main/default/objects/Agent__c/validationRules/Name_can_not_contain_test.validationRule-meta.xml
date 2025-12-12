@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_can_not_contain_test</fullName>
+    <active>true</active>
+    <description>Name Can not Contain Test Keyword</description>
+    <errorConditionFormula>AND(
+  ISNEW(),
+  OR(
+    CONTAINS(UPPER(Name), &apos;TEST&apos;),
+    CONTAINS(UPPER(Email__c), &apos;TEST&apos;)
+  )
+)</errorConditionFormula>
+    <errorMessage>Name OR Email field can not contain test</errorMessage>
+</ValidationRule>

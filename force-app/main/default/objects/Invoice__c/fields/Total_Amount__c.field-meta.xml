@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Amount__c</fullName>
+    <description>Represents the total monetary value associated with this record. This may include the sum of all related invoices, property costs, fees, or any financial transactions linked to the account or property.</description>
+    <inlineHelpText>Enter or display the total amount related to this record. Ensure it reflects the combined value of all relevant charges or transactions.</inlineHelpText>
+    <label>Total Amount</label>
+    <precision>12</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

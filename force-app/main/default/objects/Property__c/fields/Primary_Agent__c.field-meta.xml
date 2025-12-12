@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Agent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Refers to the main agent responsible for managing and coordinating all activities related to this property. This includes client interactions, property visits, documentation, and deal closure. Ensures accountability and single-point ownership of the listing.</description>
+    <inlineHelpText>Select the agent who is primarily handling this property. This person will be the main contact for all related tasks and updates.</inlineHelpText>
+    <label>Primary Agent</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or does not match filter criteria. Please Select Agent record with status Active</errorMessage>
+        <filterItems>
+            <field>Agent__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <infoMessage>Please Select Agent record with status Active</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Agent__c</referenceTo>
+    <relationshipLabel>Properties</relationshipLabel>
+    <relationshipName>Properties</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

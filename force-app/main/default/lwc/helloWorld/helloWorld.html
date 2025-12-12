@@ -1,0 +1,43 @@
+<template>
+
+    <lightning-card variant="Narrow" title="Lightning Web Component Tutuorials" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+
+                <h1> Hello World, This is my First LWC </h1>
+
+    <div class="main-div">
+        <img lwc:if={ShowTom} src="https://i.pinimg.com/736x/f8/3d/b0/f83db01f1cd7075f004d914000dba049.jpg" alt="Tom" />
+
+        <img lwc:elseif={ShowJerry} src="https://static.vecteezy.com/system/resources/previews/022/024/202/non_2x/tom-and-jerry-cartoon-free-vector.jpg" alt="Jerry" />
+
+        <img lwc:else src="https://www.shutterstock.com/image-photo/face-tom-jerry-laughing-without-260nw-2624810335.jpg" alt="Tom and Jerry" />
+    </div>
+
+
+    <div class="main-div" if:true={person}>
+        <p>{person.name}</p> 
+        <p>{person.age}</p>
+        <p>{person.city}</p>
+        <p>{person.isAdmin}</p>
+        <p>{person.salary}</p>
+        
+        <p lwc:if={person.address}>{person.address.city}</p>
+        <p lwc:if={person.state}>{person.address.state}</p>
+        <p lwc:if={person.country}>{person.address.country}</p>
+    </div>
+        <hr>
+
+    <div class="main-div">
+        <template for:each={employees} for:item="employee" for:index="index">
+            <p key={employee.id}>{index} - {employee.name} - {employee.age}</p>
+        </template>
+
+
+    </div>
+
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+
+    
+</template> 

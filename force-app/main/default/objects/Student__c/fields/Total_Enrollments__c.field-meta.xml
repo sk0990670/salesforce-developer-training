@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Enrollments__c</fullName>
+    <description>Count of Enrollment records</description>
+    <inlineHelpText>Count of Enrollment records</inlineHelpText>
+    <label>Total Enrollments</label>
+    <summaryForeignKey>Enrollment__c.Student__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

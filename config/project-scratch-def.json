@@ -1,0 +1,17 @@
+{
+  "orgName": "SoloSchools Learning",
+  "edition": "Enterprise",
+  "username": "",
+  "adminEmail": "",
+  "hasSampleData": true,
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true,
+      "enableLightningPreviewPref": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Case Created</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+    }
+
+    .header {
+      background-color: #0070d2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .content {
+      padding: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .case-details {
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .case-details h3 {
+      margin-top: 0;
+      color: #0070d2;
+    }
+
+    .case-details p {
+      margin: 6px 0;
+    }
+
+    .priority-box {
+      background-color: #e8f4ff;
+      border-radius: 6px;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .priority-box h4 {
+      color: #0070d2;
+      margin-top: 0;
+    }
+
+    .footer {
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Support Case Created</h1>
+      <p>We've received your request and are here to help</p>
+    </div>
+
+    <!-- Body Content -->
+    <div class="content">
+      <p>Dear {!Case.Contact},</p>
+      <p>
+        Thank you for contacting our support team. We have successfully created a case for your request and our team will review it shortly.
+      </p>
+
+      <!-- Case Details Section -->
+      <div class="case-details">
+        <h3>📁 Case Details</h3>
+        <p><strong>Case Number:</strong> {!Case.CaseNumber}</p>
+        <p><strong>Subject:</strong> {!Case.Subject}</p>
+        <p><strong>Priority:</strong> {!Case.Priority}</p>
+        <p><strong>Created Date:</strong> {!Case.CreatedDate}</p>
+        <p><strong>Case Owner:</strong> {!Case.OwnerFullName}</p>
+      </div>
+
+      <!-- Priority Info -->
+      <div class="priority-box">
+        <h4>⏱️ Expected Response Times</h4>
+        <p><strong>High Priority:</strong> Within 2 hours</p>
+        <p><strong>Medium Priority:</strong> Within 8 hours</p>
+        <p><strong>Low Priority:</strong> Within 24 hours</p>
+      </div>
+
+      <p>
+        You can track the progress of your case using the case number above. Our team is committed to providing you with excellent support and will keep you updated throughout the resolution process.
+      </p>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>Best regards,</p>
+        <p><strong>{!Case.OwnerFullName}</strong><br/>
+        Customer Support Team<br/>
+        📧 {!Case.OwnerEmail}<br/>
+        ☎️ +1-800-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

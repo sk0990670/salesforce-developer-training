@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Status_Change_Logic</fullName>
+    <active>true</active>
+    <description>Prevents invalid status transitions</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Property_Status__c),
+  OR(
+    AND(TEXT(PRIORVALUE(Property_Status__c)) = &quot;Sold&quot;, TEXT(Property_Status__c) = &quot;Available&quot;),
+    AND(TEXT(PRIORVALUE(Property_Status__c)) = &quot;Withdrawn&quot;, TEXT(Property_Status__c) = &quot;Under Contract&quot;)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Property_Status__c</errorDisplayField>
+    <errorMessage>Invalid status change. Sold properties cannot be made available, and withdrawn properties cannot go directly under contract.</errorMessage>
+</ValidationRule>

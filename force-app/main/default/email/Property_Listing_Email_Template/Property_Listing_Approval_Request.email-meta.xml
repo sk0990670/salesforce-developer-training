@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Property Listing Approval Request</name>
+    <style>none</style>
+    <subject>Property Listing Approval Required - {!Property_Listing__c.Property__r.Name}</subject>
+    <textOnly>🏠 Property Listing Approval Request
+
+Requires your immediate attention
+
+Dear Property Manager,
+
+A new property listing requires your approval. Please review the details below and take appropriate action.
+
+📋 Property Details
+
+Property Name: {!Property_Listing__c.Name}
+
+Property Address: {!Property_Listing__c.Property__r.Property_Address__c}
+
+Square Footage: {!Property_Listing__c.Square_Footage__c} sq ft
+
+Listing Agent: {!Property_Listing__c.Owner.Name}
+
+Current Status: {!Property_Listing__c.Listing_Status__c}
+
+Approval Status: {!Property_Listing__c.Approval_Status__c}
+
+💰 Pricing Analysis
+
+Proposed Listing Price: {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Listing_Price__c}
+
+Market Analysis Price: {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Market_Analysis_Price__c}
+
+Price per Sq Ft: {!Property_Listing__c.CurrencyIsoCode} {!Property_Listing__c.Price_Per_SqFt__c}
+
+Discount from Market: {!Property_Listing__c.Discount_From_Market__c}%
+
+📊 Market Analysis &amp; Strategy
+
+Strategy: {!Property_Listing__c.Listing_Strategy__c}
+
+Competitive Analysis:
+
+{!Property_Listing__c.Competitive_Analysis__c}
+🎯 Agent Recommendations
+
+Based on current market conditions and competitive analysis, the listing agent recommends immediate approval of this listing at the proposed price point.
+
+⚠️ Action Required
+
+Please review this property listing and provide your approval decision. Time-sensitive market conditions may affect pricing if approval is delayed.
+
+📸 Property Highlights
+
+Property photos and detailed specifications are available in the Salesforce record. Click the &quot;View Full Details&quot; button below.
+
+📋 View Full Details in Salesforce 📧 Contact Listing Agent
+
+Generated on: {!TODAY()}
+Record ID: {!Property_Listing__c.Id}
+This is an automated notification from your Property Management System.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

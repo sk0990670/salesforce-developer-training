@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>We'd Love Your Feedback</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; }
+        
+        /* Body styles */
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333333;
+        }
+        
+        /* Table styles */
+        table {
+            border-collapse: collapse !important;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header-table {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #667eea; /* Fallback for older clients */
+        }
+        
+        .header-text {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px 20px 10px 20px;
+            margin: 0;
+        }
+        
+        .header-subtext {
+            color: #ffffff;
+            font-size: 16px;
+            text-align: center;
+            padding: 0 20px 30px 20px;
+            margin: 0;
+            opacity: 0.9;
+        }
+        
+        .content-table {
+            padding: 30px 20px;
+        }
+        
+        .case-info-table {
+            background-color: #f8f9ff;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .case-info-header {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .case-detail-row {
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e6ff;
+        }
+        
+        .case-detail-label {
+            font-weight: bold;
+            color: #555555;
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .case-detail-value {
+            color: #333333;
+        }
+        
+        .message-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555555;
+            margin: 20px 0;
+        }
+        
+        .rating-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 25px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .rating-header {
+            color: #333333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .rating-buttons-table {
+            margin: 20px auto;
+        }
+        
+        .rating-btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 5px;
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .rating-excellent {
+            background-color: #4CAF50;
+        }
+        
+        .rating-good {
+            background-color: #2196F3;
+        }
+        
+        .rating-average {
+            background-color: #FF9800;
+        }
+        
+        .rating-poor {
+            background-color: #f44336;
+        }
+        
+        .feedback-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .feedback-header {
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .feedback-btn {
+            display: inline-block;
+            background-color: #667eea;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .footer-table {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .footer-text {
+            color: #666666;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        
+        .footer-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+            
+            .content-table {
+                padding: 20px 15px !important;
+            }
+            
+            .rating-btn {
+                display: block !important;
+                margin: 10px auto !important;
+                width: 200px !important;
+            }
+            
+            .case-detail-label {
+                width: 100% !important;
+                display: block !important;
+            }
+            
+            .case-detail-value {
+                display: block !important;
+                margin-top: 5px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center" bgcolor="#f4f4f4" style="padding: 20px 0;">
+                <table class="email-container" border="0" cellpadding="0" cellspacing="0" width="600">
+                    
+                    <!-- Header Section -->
+                    <tr>
+                        <td class="header-table" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); background-color: #667eea;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="header-text">🎉 Your Case Has Been Resolved!</td>
+                                </tr>
+                                <tr>
+                                    <td class="header-subtext">We'd love to hear about your experience</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content Section -->
+                    <tr>
+                        <td class="content-table">
+                            
+                            <!-- Case Information -->
+                            <table class="case-info-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="case-info-header">📋 Case Summary</td>
+                                </tr>
+                                <tr>
+                                    <td class="case-detail-row">
+                                        <span class="case-detail-label">Case Number:</span>
+                                        <span class="case-detail-value">{!Case.CaseNumber}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="case-detail-row">
+                                        <span class="case-detail-label">Subject:</span>
+                                        <span class="case-detail-value">{!Case.Subject}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="case-detail-row">
+                                        <span class="case-detail-label">Resolved Date:</span>
+                                        <span class="case-detail-value">{!Case.ClosedDate}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="case-detail-row" style="border-bottom: none;">
+                                        <span class="case-detail-label">Assigned Agent:</span>
+                                        <span class="case-detail-value">{!Case.Owner}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Message -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="message-text">
+                                        Dear {!Case.Contact},
+                                        <br><br>
+                                        Great news! Your support case has been successfully resolved. Our team has worked diligently to address your concerns, and we hope the solution meets your expectations.
+                                        <br><br>
+                                        Your satisfaction is our top priority, and we would greatly appreciate your feedback on the support experience you received.
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Rating Section -->
+                            <table class="rating-section" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="rating-header">⭐ How would you rate our support?</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0; font-size: 14px; color: #666;">
+                                        Please click on one of the options below to share your experience:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table class="rating-buttons-table" border="0" cellpadding="5" cellspacing="0">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="{!$Setup.Custom_Settings__c.Review_URL__c}?rating=5&case={!Case.Id}" class="rating-btn rating-excellent">😊 Excellent</a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="{!$Setup.Custom_Settings__c.Review_URL__c}?rating=4&case={!Case.Id}" class="rating-btn rating-good">👍 Good</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="{!$Setup.Custom_Settings__c.Review_URL__c}?rating=3&case={!Case.Id}" class="rating-btn rating-average">😐 Average</a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="{!$Setup.Custom_Settings__c.Review_URL__c}?rating=2&case={!Case.Id}" class="rating-btn rating-poor">👎 Poor</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Feedback Section -->
+                            <table class="feedback-section" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="feedback-header">💬 Want to share more detailed feedback?</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #666; font-size: 14px; padding: 10px 0;">
+                                        Your detailed feedback helps us improve our services and better serve you in the future.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <a href="{!$Setup.Custom_Settings__c.Detailed_Feedback_URL__c}?case={!Case.Id}&contact={!Case.Contact}" class="feedback-btn">📝 Provide Detailed Feedback</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Closing Message -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="message-text">
+                                        Thank you for choosing {!Organization.Name}. If you have any additional questions or concerns, please don't hesitate to reach out to us.
+                                        <br><br>
+                                        Best regards,<br>
+                                        <strong>{!Case.Owner}</strong><br>
+                                        {!Organization.Name} Support Team
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Section -->
+                    <tr>
+                        <td class="footer-table">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="footer-text" style="font-weight: bold; font-size: 14px;">{!Organization.Name}</td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-text">📧 {!Organization.Email} | 📞 {!Organization.Phone}</td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-text">🌐 <a href="{!Organization.Website}" class="footer-link">{!Organization.Website}</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="footer-text" style="padding-top: 15px;">
+                                        This email was sent regarding Case #{!Case.CaseNumber}. If you have any questions, please reference this case number.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

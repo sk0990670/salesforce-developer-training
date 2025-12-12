@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specialization__c</fullName>
+    <description>Links this agent specialization record to a specific area of expertise. This master-detail relationship ensures that each entry is tied to a defined specialization category, enabling accurate classification and reporting.</description>
+    <inlineHelpText>Select the specialization that applies to this agent (e.g., Residential, Commercial, Rentals). This defines the specific expertise area assigned to the agent.</inlineHelpText>
+    <label>Specialization</label>
+    <referenceTo>Specialization__c</referenceTo>
+    <relationshipLabel>Agent Specializations</relationshipLabel>
+    <relationshipName>Agent_Specializations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

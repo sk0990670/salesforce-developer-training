@@ -1,0 +1,52 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Create Contact" icon-name="standard:contact">
+        
+        <div class="slds-p-horizontal_small">Account
+
+            <lightning-record-picker
+            name="AccountId"
+            variant="standard"
+            label="Account"
+            placeholder="Search Accounts..."
+            object-api-name="Account"
+            required="true"
+            ></lightning-record-picker>
+        
+            <lightning-input type="text" variant="standard" name="FirstName" label="First Name" placeholder="type first name here..." required="true" onchange={handleFirstName}></lightning-input>
+
+            <lightning-input type="text" variant="standard" name="LastName" label="Last Name" placeholder="type last name here..." required="true" onchange={handleLastName}></lightning-input>
+
+            <lightning-input type="email" variant="standard" name="Email" label="Email" placeholder="type email here..." required="true" onchange={handleEmail}></lightning-input>
+
+            <lightning-input type="phone" variant="standard" name="Phone" label="Phone" placeholder="type phone number here..." required onchange={handlePhone}></lightning-input>
+
+            <lightning-combobox name="LeadSource" variant="standard" options={_options}
+            value="Call" 
+            label="Lead Source" placeholder="Select Lead Source" required="true" onchange={handleLeadSource} ></lightning-combobox>
+
+            <lightning-input type="checkbox" checked="true" variant="standard" name="IsPrimaryContact" label="Is Primary Contact" onchange={handleIsPrimaryContact}></lightning-input>
+
+            <!-- <div onmouseover={handleMouseOver}>
+                <h1>
+                    Bring your mouse over me!
+                </h1>
+            </div>
+
+            <lightning-input type="text" variant="standard" name="EnterKey" label="Press Enter Key" placeholder="type here..." onchange={handleEnterKey}></lightning-input> -->
+
+            <lightning-button variant="brand" label="Create Contact" title="Create Contact" onclick={handleCreateContact}></lightning-button>
+
+            <lightning-button variant="destructive" label="Cancel" title="Cancel" ></lightning-button>
+
+            <lightning-button variant="success" label="Save" title="Save" ></lightning-button>
+            
+            <lightning-button variant="inverse" label="Inverse" title="Inverse" ></lightning-button>
+
+            <lightning-button variant="neutral" label="Neutral" title="Neutral" ></lightning-button>
+
+            
+        </div>
+        <div slot="footer">Card Footer</div>
+    </lightning-card>
+    
+</template>
