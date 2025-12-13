@@ -18,4 +18,8 @@ export default class Child extends LightningElement {
     disconnectedCallback(){
         console.log('Child disconnectedCallback called');
     }
+
+    renderedCallback(){
+        console.log('Child renderedCallback called');
+    }
 }
