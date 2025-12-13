@@ -12,5 +12,6 @@ export default class Child extends LightningElement {
     connectedCallback(){
         console.log('Child connecteCallback called');
         console.log('child message inside the connectedCallback: ' + this.message);
+        //throw new Error('Error thrown from Child component');
     }
 }

@@ -15,5 +15,10 @@ export default class Parent extends LightningElement {
         
     }
 
+    errorCallback(error, stack){
+        console.log('Parent errorCallback called');
+        console.log('Error: ' + error);
+        console.log('Stack: ' + stack);
+    }
 
 }
