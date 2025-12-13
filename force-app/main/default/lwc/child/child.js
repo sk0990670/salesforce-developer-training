@@ -8,4 +8,9 @@ export default class Child extends LightningElement {
         console.log('Child component constructor called');
         console.log('child message: ' + this.message);
     }
+
+    connectedCallback(){
+        console.log('Child connecteCallback called');
+        console.log('child message inside the connectedCallback: ' + this.message);
+    }
 }

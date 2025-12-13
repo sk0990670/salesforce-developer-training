@@ -10,4 +10,10 @@ export default class Parent extends LightningElement {
         console.log('Parent Constructor');
     }
 
+        connectedCallback(){
+        console.log('Parent connecteCallback called');
+        
+    }
+
+
 }
