@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle
+    xmlns="http://soap.sforce.com/2006/04/metadata"
+    xmlns:lwc="http://soap.sforce.com/2006/04/metadata/lwc">
+
+    <apiVersion>65.0</apiVersion>
+    <isExposed>true</isExposed>
+
+    <lwc:targets>
+        <lwc:target>lightning__AppPage</lwc:target>
+        <lwc:target>lightning__HomePage</lwc:target>
+        <lwc:target>lightning__RecordPage</lwc:target>
+    </lwc:targets>
+
+</LightningComponentBundle>
