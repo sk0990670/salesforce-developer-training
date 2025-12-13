@@ -2,6 +2,7 @@ import { LightningElement } from 'lwc';
 
 export default class Parent extends LightningElement {
     message;
+    ShowHide = true;
 
     constructor(){
         super();
@@ -21,4 +22,7 @@ export default class Parent extends LightningElement {
         console.log('Stack: ' + stack);
     }
 
+    handleClick(event){
+        this.ShowHide = !this.ShowHide;
+    }
 }
