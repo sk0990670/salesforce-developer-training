@@ -4,10 +4,8 @@ export default class ProfileCard extends LightningElement {
     @api name;
     @api email;
     @api phone;
-    @api address;
     @api photoUrl;
     @api isAdmin;
     @api isManager;
     @api isEmployee;
-
 }

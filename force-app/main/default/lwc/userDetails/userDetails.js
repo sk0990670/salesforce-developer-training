@@ -2,13 +2,20 @@ import { LightningElement } from 'lwc';
 
 export default class UserDetails extends LightningElement {
     userInformation = {
-        name: 'Sujeet Kumar',
-        email: 'sujeet.kumar@example.com',
-        phone: '+1-202-555-0143',
-        address: '1234 Elm Street, Springfield, IL 62704',
-        photoUrl: 'https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        name: "Amit Singh",
+        email: "asingh@gmail.com",
+        phone: "1234567890",
+        photoUrl: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
         isAdmin: true,
-        isManager: false,
+        isManager: true,
         isEmployee: true
-    };
+    }
+
+    handleUpdateProfile(event){
+    /** Step1 - Which Child component */
+    let updateProfileComponent = this.refs.updateProfile;
+        if(updateProfileComponent){
+            updateProfileComponent.handleUpdateModal(Math.random());
+        }
+    }
 }
